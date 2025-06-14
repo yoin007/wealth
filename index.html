@@ -6,12 +6,12 @@
     <title>欢迎加入</title>
     <style>
         body {
-            display: flex;
+            /* display: flex; */
             flex-direction: column; /* 使内容垂直排列 */
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
+            margin: 20 5;
             background-color: #f0f8ff; /* 设置背景颜色 */
             font-family: Arial, sans-serif; /* 设置字体 */
         }
@@ -39,23 +39,16 @@
             width: 80%; /* 设置容器宽度 */
         }
     </style>
-    <script>
-        var imageIndex = parseInt(localStorage.getItem("imageIndex")) || 1;
-        var imageCount = 1; // 修改为实际图片数量
-
-        function changeImage() {
-            var img = document.getElementById("slideshow");
-            img.src = imageIndex + ".png";
-            imageIndex = (imageIndex % imageCount) + 1;
-            localStorage.setItem("imageIndex", imageIndex);
-        }
-    </script>
+    
 </head>
 <body onload="changeImage()">
     <div class="container">
-        <h3>欢迎扫码入群</h3>
-        <hr>
-        <img id="slideshow" src="1.png">
+        <h3>高考志愿交流群</h3>
+       
+        <img  src="2.png">
+         <hr>
+         <h3>羊毛福利群</h3>
+         <img src="1.png" alt="">
     </div>
 </body>
 </html>
